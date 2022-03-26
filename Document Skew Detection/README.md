@@ -21,19 +21,19 @@ using Deep Learning approaches.**
 
 The dataset from kaggle (https://www.kaggle.com/datasets/vishnunkumar/rdocuments?select=rdocuments), consists of a CSV file that contains the images "id" which is the image name and their rotation angle in **degrees**, with a file of length of 950 rows (no. of images)
 
-![Image of Interface](https://github.com/mostafasamii/Computer-Vision-Projects/tree/main/Document%20Skew%20Detection/repo_imgs/sample.PNG)
+![Sample Image](https://github.com/mostafasamii/Computer-Vision-Projects/tree/main/Document%20Skew%20Detection/repo_imgs/sample.png)
 
 and a folder of Images "rdocuments" contains 950 images of skewed documents. and here you are a sample of the data
 
-![Image of Interface](https://github.com/mostafasamii/Computer-Vision-Projects/tree/main/Document%20Skew%20Detection/repo_imgs/skewed_docs.PNG)
+![Skewed Docs Image](https://github.com/mostafasamii/Computer-Vision-Projects/tree/main/Document%20Skew%20Detection/repo_imgs/skewed_docs.png)
 
 and the distribution of the scaled angles in skewed images:
 
-![Image of Interface](https://github.com/mostafasamii/Computer-Vision-Projects/tree/main/Document%20Skew%20Detection/repo_imgs/angles_dist.PNG)
+![Angle distribution Image](https://github.com/mostafasamii/Computer-Vision-Projects/tree/main/Document%20Skew%20Detection/repo_imgs/angles_dist.png)
 
 Then I divided the dataset between 760 images for training and 190 for validation. And I got these results from training the model without the transfer learning
 
-![Image of Interface](https://github.com/mostafasamii/Computer-Vision-Projects/tree/main/Document%20Skew%20Detection/repo_imgs/model_history.PNG)
+![Model History Image](https://github.com/mostafasamii/Computer-Vision-Projects/tree/main/Document%20Skew%20Detection/repo_imgs/model_history.png)
 
 
 # Experiments
@@ -45,14 +45,14 @@ After that I started building an image generator with some data augmentations li
 images, applying zoom range or changing the brightness range to be (0.8 ~ 1.2).
 Then I built the model as following
 
-![Image of Interface](https://github.com/mostafasamii/Computer-Vision-Projects/tree/main/Document%20Skew%20Detection/repo_imgs/model_layers.png)
+![Model Layers Image](https://github.com/mostafasamii/Computer-Vision-Projects/tree/main/Document%20Skew%20Detection/repo_imgs/model_layers.png)
 
 I trained the model for 50 epochs with a batch size of 32. And the loss function for the CNN
 model was Mean Absolute Error (MAE)
 The results from the model using a test image is:
 
-![Image of Interface](https://github.com/mostafasamii/Computer-Vision-Projects/tree/main/Document%20Skew%20Detection/repo_imgs/test_image.png)
-![Image of Interface](https://github.com/mostafasamii/Computer-Vision-Projects/tree/main/Document%20Skew%20Detection/repo_imgs/resulting_image.png)
+![Test Image](https://github.com/mostafasamii/Computer-Vision-Projects/tree/main/Document%20Skew%20Detection/repo_imgs/test_image.png)
+![Resulting Image](https://github.com/mostafasamii/Computer-Vision-Projects/tree/main/Document%20Skew%20Detection/repo_imgs/resulting_image.png)
 
 
 # Future Work
@@ -67,7 +67,7 @@ The results from the model using a test image is:
 * Python version 2.7.12
 
 
-# Overall conclusions
+# Overall Conclusions
 
 The algorithm has been tested in the data of the input documents formats and has been found to detect the page orientation and existing skew successfully.
 
